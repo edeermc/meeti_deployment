@@ -1,0 +1,21 @@
+<main class="contenedor contenedor-formularios no-padding">
+    <h1><%- nombrePagina %></h1>
+
+    <form class="default-form" action="/cambiar-contrasena" method="POST">
+        <div class="campo">
+            <label>Contraseña anterior</label>
+            <input type="password" name="contrasena_anterior" placeholder="Contraseña anterior">
+        </div>
+        <div class="campo">
+            <label>Contraseña nueva</label>
+            <input type="password" name="contrasena_nueva" placeholder="Contraseña nueva">
+        </div>
+        <div class="campo">
+            <label>Repetir contraseña</label>
+            <input type="password" name="contrasena_repetir" placeholder="Repetir contraseña">
+        </div>
+        <div class="campo enviar">
+            <input type="submit" class="btn btn-rosa" value="Cambiar contraseña">
+        </div>
+    </form>
+</main>

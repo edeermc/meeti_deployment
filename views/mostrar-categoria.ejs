@@ -1,0 +1,13 @@
+<div class="contenedor proximos-eventos">
+    <h1><%= nombrePagina %></h1>
+
+    <% if (meetis.length) { %>
+        <div class="grid columnas-md-3 ">
+            <% meetis.forEach( meeti => { %>
+                <%- include('partials/card-meeti.ejs', {meeti : meeti}) %>
+            <% }) %>
+        </div>
+    <% } else { %>
+        <p>Aún no hay meeti's para esta categoria</p>
+    <% } %>
+</div>
